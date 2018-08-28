@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <style>
+    .flex-container {
+      background-color: #171717;
+      padding: 15px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      height: 500px;
+      align-items: center;
+    }
+    .flex-container div {
+      background-color: #eee;
+      width: 100px;
+      height: 100px;
+    }
+    #chl1 {
+      flex-grow: 1;
+      background-color: red;
+      flex-basis: 100px;
+    }
+    #chl2 {
+      flex-grow: 2;
+      background-color: blue;
+      flex-basis: 100px;
+    }
+    #chl3 {
+      flex-grow: 4;
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div id="chl1">1</div>
+    <div id="chl2">2</div>
+    <div id="chl3">3</div>
+  </div>
+</body>
+</html>

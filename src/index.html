@@ -15,10 +15,10 @@
 
   <title>JavaScript Weather Application</title>
 	
-  <link rel="stylesheet" href="./styles/index.css">
   <link rel="stylesheet" href="./styles/reset-css.css">
-  <link rel="stylesheet" href="./styles/ripple.css">
   <link rel="stylesheet" href="./styles/loader.css">
+  <link rel="stylesheet" href="./styles/ripple.css">
+  <link rel="stylesheet" href="./styles/index.css">
   
   <link rel="shortcut icon" href="./assets/images/icons/favicon96x96.ico">
   
@@ -26,7 +26,32 @@
 </head>
 <body>
   <div class="lds-dual-ring center display-none"></div>
-  <main><p class="display-none">hidden</p>shown</main>
+  <main>
+    <button id="open-menu-btn" class="ripple"><img src="./assets/images/icons/menu.png" class="icon-sm-28"></button>
+    <!-- current weather section -->
+    <section id="current-day-weather-container">
+      <h1 class="location-label">Brasilia</h1>
+      <div class="flex-container" id="temperature-summary-container">
+        <div>
+          <img src="./assets/images/summary-icons/clear-day-white.png">
+        </div>
+        <div>
+          <h1 id="degrees-label">20&#176;</h1>
+          <p id="summary-label">Clear Day</p>
+        </div>
+      </div>
+      <div id="humidity-wind-container" class="flex-container">
+        <div>
+          <img class="icon-sm-30" src="./assets/images/icons/humidity.png" alt="">
+          <span>20%</span>
+        </div>
+        <div>
+          <img class="icon-sm-30" src="./assets/images/icons/wind-speed-flag.png" alt="">
+          <span>3 m/h<span>
+        </div>
+      </div>
+    </section>
+  </main>
 	<script src="scripts/index.js"></script>
 </body>
 </html>

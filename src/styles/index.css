@@ -5,7 +5,7 @@ body {
 }
 
 .center {
-  position: absolute;
+  23gposition: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -28,6 +28,30 @@ body {
   background-color: red;
 }
 
+.icon-sm-25 {
+  width: 25px;
+}
+
+.icon-sm-28 {
+  width: 28px;
+}
+
+.icon-sm-30 {
+  width: 30px;
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;
+}
+
+.flex-container > * {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  /* flex: 1 1 0; */
+}
+
 /* ========== General Styles ========== */
 
 html,
@@ -40,4 +64,81 @@ main {
 * {
   box-sizing: border-box;
   user-select: none;
+}
+
+main {
+  background-image: url('../assets/images/bg-images/clear-day.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+/* ========== General Styles ========== */
+
+#open-menu-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+}
+
+/* ========== General Styles ========== */
+
+#current-day-weather-container {
+  width: 100%;
+  height: 60%;
+  position: relative;
+  color: #fff;
+  padding: 80px 30px 20px 30px;
+}
+
+.location-label {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 50px;
+  letter-spacing: 1.3px;
+}
+
+#temperature-summary-container {
+  align-items: center;
+  background-color: red;
+}
+
+#temperature-summary-container > div:nth-child(2) {
+  background-color: green;
+  text-align: center;
+}
+
+#degrees-label {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+#summary-label {
+  font-size: 30px;
+}
+
+#humidity-wind-container {
+  background-color: red;
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+  left: 0;
+}
+
+#humidity-wind-container > div img {
+  background-color: yellow;
+  vertical-align: middle;
+  position: relative;
+  top: -3px;
+}
+
+#humidity-wind-container > div span {
+  font-size: 18px;
 }
